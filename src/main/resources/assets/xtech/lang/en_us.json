@@ -1,0 +1,13 @@
+{
+  "itemGroup.xtech": "Example Mod Tab",
+  "block.xtech.example_block": "Example Block",
+  "item.xtech.example_item": "Example Item",
+
+  "xtech.configuration.title": "XTech Configs",
+  "xtech.configuration.section.xtech.common.toml": "XTech Configs",
+  "xtech.configuration.section.xtech.common.toml.title": "XTech Configs",
+  "xtech.configuration.items": "Item List",
+  "xtech.configuration.logDirtBlock": "Log Dirt Block",
+  "xtech.configuration.magicNumberIntroduction": "Magic Number Text",
+  "xtech.configuration.magicNumber": "Magic Number"
+}
