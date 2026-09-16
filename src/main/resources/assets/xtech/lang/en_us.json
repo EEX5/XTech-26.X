@@ -1,13 +1,11 @@
 {
-  "itemGroup.xtech": "Example Mod Tab",
-  "block.xtech.example_block": "Example Block",
-  "item.xtech.example_item": "Example Item",
+  "item.xtech.vacuum_tube": "Vacuum Tube",
+  "item.xtech.capacitor_electrolytic": "Electrolytic Capacitor",
+  "item.xtech.capacitor_ceramic": "Ceramic Capacitor",
 
-  "xtech.configuration.title": "XTech Configs",
-  "xtech.configuration.section.xtech.common.toml": "XTech Configs",
-  "xtech.configuration.section.xtech.common.toml.title": "XTech Configs",
-  "xtech.configuration.items": "Item List",
-  "xtech.configuration.logDirtBlock": "Log Dirt Block",
-  "xtech.configuration.magicNumberIntroduction": "Magic Number Text",
-  "xtech.configuration.magicNumber": "Magic Number"
+  "item.xtech.circuit_analog": "Analog Circuit",
+
+  "block.xtech.waffle_stack": "Stacked Waffles",
+
+  "creativetab.xtech.circuits_tab": "XTech Circuits"
 }

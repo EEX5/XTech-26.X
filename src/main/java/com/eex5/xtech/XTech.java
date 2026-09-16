@@ -1,5 +1,8 @@
 package com.eex5.xtech;
 
+import com.eex5.xtech.block.XTBlocks;
+import com.eex5.xtech.item.XTItems;
+import com.eex5.xtech.tab.XTCreativeTabs;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -41,6 +44,9 @@ public class XTech {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        XTCreativeTabs.register(modEventBus);
+        XTItems.register(modEventBus);
+
         NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -54,7 +60,9 @@ public class XTech {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(XTBlocks.STACKED_WAFFLES);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
